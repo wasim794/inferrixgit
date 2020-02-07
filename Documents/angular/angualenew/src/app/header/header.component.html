@@ -1,0 +1,17 @@
+	<!-- Header -->
+    <header id="header">
+        <a class="logo" routerLink="/">Industrious</a>
+        <nav>
+          <a  (click)="menu()">Menu</a>
+        </nav>
+      </header>
+  
+    <!-- Nav -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a class="abs" (click)="menuremove()" routerLink="/" routerLinkActive="active-link">Home</a></li>
+          <li><a class="abs" (click)="menuremove()" routerLink="/about" routerLinkActive="active-link">About us</a></li>
+          <li><a class="abs"  (click)="menuremove()" routerLink="/contactus">Contact Us</a></li>
+        </ul>
+        <a id="remove" (click)="menuremove()" class="close"></a>
+      </nav>
